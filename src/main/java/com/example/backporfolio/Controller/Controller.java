@@ -4,6 +4,7 @@ package com.example.backporfolio.Controller;
 import com.example.backporfolio.model.Persona;
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,9 +16,10 @@ public class Controller {
     
     List<Persona> listaPersonas = new ArrayList();
     
+    @CrossOrigin(origins = {"http://localhost:4200", "https://app-sebas.herokuapp.com"})
     @GetMapping("/hola")
     public String decirHola() {
-        return "Hola Mundo5";
+        return "Hola Mundo990";
     }
     
     @PostMapping("/new/persona")
