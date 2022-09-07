@@ -16,7 +16,7 @@ public class Controller {
     
     List<Persona> listaPersonas = new ArrayList();
     
-    @CrossOrigin(origins = {"http://localhost:4200", "https://app-sebas.herokuapp.com"})
+    @CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
     @GetMapping("/hola")
     public String decirHola() {
         return "Hola Mundo 1990";
