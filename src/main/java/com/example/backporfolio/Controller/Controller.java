@@ -19,7 +19,7 @@ public class Controller {
     @CrossOrigin(origins = {"http://localhost:4200", "https://app-sebas.herokuapp.com"})
     @GetMapping("/hola")
     public String decirHola() {
-        return "Hola Mundo990";
+        return "Hola Mundo 1990";
     }
     
     @PostMapping("/new/persona")
