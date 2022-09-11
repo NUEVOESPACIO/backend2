@@ -24,7 +24,7 @@ public class Controller {
     @CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
     @GetMapping("/hola")
     public String decirHola() {
-        return "Hola Mundo 2023";
+        return "Hola Mundo 2024";
     }
     
     @CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
