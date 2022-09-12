@@ -3,7 +3,6 @@ package com.example.backporfolio.Controller;
 
 import com.example.backporfolio.model.Persona;
 import com.example.backporfolio.service.iPersonaService;
-import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -24,8 +23,16 @@ public class Controller {
     @CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
     @GetMapping("/hola")
     public String decirHola() {
-        return "Hola Mundo 2025";
+        return "Hola Mundo 2026";
     }
+    
+    @GetMapping("/")
+    public String decirHola2() {
+        return "Hola Mundo 2190";
+    }   
+
+    
+    
     
     @CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
     @PostMapping("/new/persona")
