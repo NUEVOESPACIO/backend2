@@ -20,10 +20,10 @@ public class Controller {
     @Autowired    
     private iPersonaService persoServ;
       
-    @CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
+    //@CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
     @GetMapping("/hola")
     public String decirHola() {
-        return "Hola Mundo 2026";
+        return "Hola Mundo 2027";
     }
     
     @GetMapping("/")
@@ -34,20 +34,20 @@ public class Controller {
     
     
     
-    @CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
+    //@CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
     @PostMapping("/new/persona")
     public void agregarPersona(@RequestBody Persona pers) {
         persoServ.crearPersona(pers);
     }
     
-    @CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
+    //@CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
     @GetMapping ("/ver/personas")
     @ResponseBody
     public List<Persona> verPersonas() {
         return persoServ.verPersonas();
     }
     
-    @CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
+    //@CrossOrigin(origins = {"http://localhost:4200", "https://angularseba.web.app"})
     @DeleteMapping ("/delete/{id}")    
     public void borrarPersona(@PathVariable Long id) {
         persoServ.borrarPersona(id);        
